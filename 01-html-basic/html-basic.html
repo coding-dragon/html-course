@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Basic 2</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML Basic</h2>
+        <p class="lead">
+            <strong>HTML</strong> is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this course will give you a basic understanding of HTML and its components.
+        </p>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li><code>Anatomy of an HTML Document</code></li>
+            <li><code>What is an HTML element</code></li>
+            <li><code>HTML attributes</code></li>
+            <li><code>Nesting elements</code></li>
+            <li><code>Empty elements</code></li>
+        </ul>
+    </div>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Anatomy of an HTML Document</h3>
+        <br/>
+        <div class="code">
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            <span>head elements - title, meta data, links</span>
+        &lt;/head&gt;
+        &lt;body&gt;
+            <span>body content elements - text, images etc</span>
+        &lt;/body&gt;
+    &lt;/html&gt;</pre>
+        </div>
+        <p class="lead">
+            That wraps up the basics of individual HTML elements.<br/><br/>
+            <strong>&lt;!DOCTYPE html&gt; - </strong> the doctype. It is required preamble. They don't do much, and are basically just needed to make sure your document behaves correctly.<br/>
+            <strong>&lt;html&gt;&lt;/html&gt; - </strong> the html element. This element wraps all the content on the entire page and is sometimes known as the root element.<br/>
+            <strong>&lt;head&gt;&lt;/head&gt; - </strong>the head element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations and more.<br/>
+            <strong>&lt;body&gt;&lt;/body&gt; - </strong>the body element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks or whatever else.<br/>
+        </p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>What is an HTML element</h3>
+        <br/>
+        <div class="code">
+    <pre>
+        &lt;p&gt;My cat is grumpy&lt;/p&gt;</pre>
+        </div>
+        <p class="lead">
+            An HTML element is defined by a start tag, some content, and an end tag. The main parts of our element are as follows: <br/><br/>
+            <strong>opening tag - &lt;p&gt;</strong> This states where the element begins. Also called start tag. This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets.<br/>
+            <strong>closing tag - &lt;/p&gt;</strong> This states the element ends. Also called end tag. This is the same as the opening tag, except that it includes a forward slash before the element name. Never skip the end tag<br/>
+            <strong> the content - </strong> This is the content of the element, which in this case, is just text.<br/>
+            <strong> the element - </strong> The opening tag, the closing tag and the content together comprise the element.<br/>
+        </p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>HTML attributes</h3>
+        <br/>
+        <div class="code">
+    <pre>
+        &lt;a <span>href="https://www.google.com/"</span>&gt;Visit here&lt;/a&gt;</pre>
+        </div>
+        <p class="lead">
+            HTML attributes provide additional information about HTML elements. Always specified in start tag and usually come in name/value pairs like: name="value"<br/>
+            <strong>href attribute</strong> - specifies the URL of the page the link goes to.
+        </p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Nesting elements</h3>
+        <br/>
+        <div class="code">
+    <pre>
+        &lt;p&gt;My cat is <span>&lt;strong&gt;</span>very<span>&lt;/strong&gt;</span> &lt;/p&gt;</pre>
+        </div>
+        <p class="lead">
+            We can put elements inside other elements too — this is called nesting.<br/>
+            Make sure that your elements are properly nested
+        </p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Empty elements</h3>
+        <br/>
+        <div class="code">
+    <pre>
+        &lt;img src="images/firefox-icon.png"  &gt;</pre>
+        </div>
+        <p class="lead">
+            HTML elements with no content are called empty elements.
+        </p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>
