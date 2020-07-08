@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Text Formatting 2</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML Text Formatting - Part 2</h2>
+        <p class="lead">
+            Less frequently used HTML inline text semantic/formatting to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.
+        </p>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li><code>&lt;sub&gt;</code> - Subscript text</li>
+            <li><code>&lt;sup&gt;</code> - Superscript text</li>
+            <li><code>&lt;ins&gt;</code> - Inserted text</li>
+            <li><code>&lt;del&gt;</code> - Deleted text</li>
+            <li><code>&lt;pre&gt;</code> - preformatted text</li>
+            <li><code>&lt;u&gt;</code> - underlined text</li>
+            <li><code>&lt;abbr&gt;</code> - abbreviation or acronym</li>
+            <li><code>&lt;cite&gt;</code> - reference</li>
+            <li><code>&lt;code&gt;</code> - computer code.</li>
+            <li><code>&lt;kbd&gt;</code> - input commands</li>
+        </ul>
+    </div>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;sub&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;sub&gt;</strong> element specifies inline text which should be displayed as subscript.<br/>
+            Mostly used for writing mathematical formula, chemical compounds
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;log <span>&lt;sub&gt;2&lt;/sub&gt;</span> 16 = x&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>log<sub>2 </sub>16 = x</p>
+        <p>H<sub>2</sub>O</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;ins&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;ins&gt;</strong> represents a range of text that has been added to a document. Browsers will usually underline inserted text.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;This is a <span>&lt;ins&gt;inserted&lt;/ins&gt;</span> word text line.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>This is a <ins>inserted</ins> word text line.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;del&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;del&gt;</strong> represents a range of text that has been deleted from a document. Browsers will usually strike a line through deleted text.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;This is a <span>&lt;del&gt;deleted&lt;/del&gt;</span> word text line.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>This is a <del>deleted</del> word text line.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;pre&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;pre&gt;</strong> represents preformatted text which is to be presented exactly as written in the HTML file.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;
+        <span>&lt;pre&gt;
+            A  B  C  D  E
+              E  G  H  I
+               J  K  L
+        &lt;/pre&gt;
+        </span> &lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+<pre>
+A  B  C  D  E
+  E  G  H  I
+    J  K  L
+</pre>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;u&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;u&gt;</strong> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation..<br/>
+            Browsers will usually underline text.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;This is a <span>&lt;u&gt;underlined&lt;/u&gt;</span> word text line.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>This is a <ins>underlined</ins> word text line.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;abbr&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;abbr&gt;</strong> represents an abbreviation or acronym; the optional <b>title</b> attribute can provide an expansion or description for the abbreviation.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;We are learning <span>&lt;abbr title="HyperText Markup language" &gt;HTML&lt;/abbr&gt;</span> course.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>We are learning <abbr title="HyperText Markup language" >HTML</abbr> course.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;cite&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;cite&gt;</strong> is used to describe a reference to a cited creative work, and must include the title of that work.<br/>
+            Browsers usually display cite elements in italic.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;<span>&lt;cite&gt;Romeo and Juliet&lt;/cite&gt;</span> is a tragedy written by William Shakespeare.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p><cite>Romeo and Juliet</cite> is a tragedy written by William Shakespeare.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;code&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;code&gt;</strong> displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;The <span>&lt;code&gt;push()&lt;/code&gt;</span> method adds one or more elements to the end of an array and returns the new length of the array.&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;kbd&gt; Element</h3>
+        <p class="lead">
+            The html <strong>&lt;kbd&gt;</strong> represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device.
+        </p>
+        <div class="code">
+    <pre>
+        &lt;p&gt;Please press <span>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</span> +  <span>&lt;kbd&gt;T&lt;/kbd&gt;</span> to open new tab&lt;/p&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <p>Please press <kbd>Ctrl</kbd> +  <kbd>T</kbd> to open new tab</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    
+</body>
+</html>
