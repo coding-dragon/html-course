@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - ID, Class 3</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    #p1 {
+        background-color: yellow;
+    }
+    .p2 {
+        color: #3f51b5;
+        font-size: 2rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML - ID, Class Attribute</h2>
+        <p class="lead">
+            While styling of HTML, attribute <b>id & class</b> plays main role.<br/>
+            The HTML <b>class</b> attribute is used to specify a class for an HTML element.<br/>
+            The HTML <b>id</b> attribute is used to specify a unique id for an HTML element.
+        </p>
+    </div>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Using id attribute</h3>
+        <p class="lead">
+            The <code>id</code> attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.<br/>
+            The <code>id</code> attribute is used to point to a specific style declaration in a styling element.<br/><br/>
+        </p>
+        <h4>While defining style for id attribute use <code>#</code> to indicate this css is for id.</h4><br/>
+        <div class="code">
+    <pre>
+        <span style="color: #97edff;">#p1 {
+            background-color: yellow;
+        }
+        </span>
+        &lt;p <span>id="p1"</span> &gt;Text line with <b>id="p1"</b>&lt;/p&gt;</pre>
+        </div>
+    </div>
+
+    <div class="container">
+        <p id="p1" >Text line with id="p1"</p>
+        <p>Text line with no specific id</p>
+    </div>
+    <br/>
+    <hr/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Using class attribute</h3>
+        <p class="lead">
+            The <code>class</code> attribute used to specify a class for an HTML element<br/>
+            Multiple HTML elements can share the same class.<br/><br/>
+        </p>
+        <h4>While defining style for class attribute use <code>.</code> to indicate this css is for class.</h4><br/>
+        </p>
+        <div class="code">
+    <pre>
+        <span style="color: #97edff;">.p2 {
+            color: #3f51b5;
+            font-size: 2rem;
+        }
+        </span>
+        &lt;p <span>class="p2"</span> &gt;Text line with <b>class="p2"</b>&lt;/p&gt;</pre>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="p2" >Text line with class="p2"</p>
+        <h3 class="p2">Heading 3 text with class="p2"</h3>
+    </div>
+    <br/>
+    <hr/>
+    <br/>
+
+</body>
+</html>
