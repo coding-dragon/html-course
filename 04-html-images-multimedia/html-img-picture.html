@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Background Image and Picture 3</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    .bg {
+        background-image: url('https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg');
+        background-size: cover;
+        height: 250px;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML Image Background & Picture</h2>
+</pre>
+    </div>
+
+    <div class="container p-3 bg-head">
+        <h3>Background Image on a HTML element</h3>
+        <p class="lead">
+            A background image can be specified for almost any HTML element.<br/>
+            To add a background image on an HTML element, use the HTML style attribute and the CSS <code>background-image</code> property
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;style&gt; {
+            background-image: url('image-link');
+        }
+        &lt;/style&gt;</span>
+        
+        &lt;div class="bg&gt; &lt;/div&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="bg"></div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Picture</h3>
+        <p class="lead">
+            The HTML &lt;picture&gt; contains zero or more &lt;source&gt; elements and one &lt;img&gt; element to offer alternative versions of an image for different display/device scenarios. 
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;picture&gt;
+            &lt;source srcset="/misc/img1.jpg" media="(min-width: 800px)" &gt;</span>
+            &lt;img src="/misc/picture.jpg" &gt;
+        <span>&lt;/picture&gt;</span>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <picture>
+            <source srcset="/misc/img1.jpg"
+                    media="(min-width: 800px)">
+            <img src="/misc/picture.jpg" />
+        </picture>
+        
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+</body>
+</html>

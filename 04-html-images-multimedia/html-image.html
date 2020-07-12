@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Image 1</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML Image</h2>
+        <p class="lead">
+            HTML supports various multimedia resources such as images, audio, and video.
+        </p>
+</pre>
+    </div>
+
+    <div class="container p-3 bg-head">
+        <h3>Image</h3>
+        <p class="lead">
+            The html <strong>&lt;img&gt;</strong> element embeds an image into the document.<br/>
+            The <code>src</code> attribute is <b>required</b> and contains the path to the image you want to embed.<br/>
+            The <code>alt</code> attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility
+        </p>
+        <div class="code">
+      <pre>
+        &lt;img src="misc/img1.jpg" alt="light house"&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <img src="misc/img1.jpg" alt="light house" width="250">
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Image size attribute</h3>
+        <p class="lead">
+            The html <strong>&lt;img&gt;</strong> element can have <code>width</code> and <code>height</code> attribute to define dimension of image.<br/>
+        </p>
+        <div class="code">
+      <pre>
+        &lt;img src="misc/img1.jpg" width="250" height="180" &gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <img src="misc/img1.jpg" width="250" height="180" >
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Image style object-fit</h3>
+        <p class="lead">
+            The <code>object-fit</code> property is used to specify how an img should be resized to fit its container.
+        <div class="code">
+      <pre>
+        &lt;img src="misc/img1.jpg" width="250" height="180" &gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <img src="misc/img1.jpg" width="250" height="250" style="object-fit: cover;" >
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>

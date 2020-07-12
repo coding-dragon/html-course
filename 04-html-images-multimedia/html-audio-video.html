@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Audio and Video 2</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    figure {
+        border: 1px solid #8a8a8a;
+        padding: 10px;
+        max-width: 250px;
+        font-size: 15px;
+    }
+    figure > img {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML Multimedia - Audio & Video</h2>
+        <p class="lead">
+            HTML supports various multimedia resources such as images, audio, and video.
+        </p>
+</pre>
+    </div>
+
+    <div class="container p-3 bg-head">
+        <h3>Audio</h3>
+        <p class="lead">
+            The html <strong>&lt;audio&gt;</strong> is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute. 
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;audio controls src="misc/audio.mp3"&gt;</span>
+            Your browser does not support the &lt;audio&gt; element.
+        <span>&lt;/audio &gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <audio
+        controls
+        src="misc/audio.mp3" loop>
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+
+        <p>The above example shows simple usage of the &lt;audio&gt; element. we can include other attributes to specify information such as whether we want it to autoplay and loop, whether we want to show the browser's default audio controls, etc.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Video</h3>
+        <p class="lead">
+            The html <strong>&lt;video&gt;</strong> a media player which supports video playback into the document. &lt;source&gt; element specifies media resources.
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;video controls width="250"&gt;
+            &lt;source src="misc/flower.webm" type="video/webm" &gt;</span>
+            Your browser does not support the &lt;audio&gt; element.
+        <span>&lt;/audio &gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <video controls width="250">
+            <source src="misc/flower.webm" type="video/webm">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <p>The above example shows simple usage of the &lt;video&gt; element. we can include other attributes to specify information such as whether we want it to autoplay and loop, whether we want to show the browser's default audio controls, etc.</p>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Image Map</h3>
+        <p class="lead">
+            The html <strong>&lt;map&gt;</strong> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <b>&lt;area&gt;</b> tags.
+        </p>
+        <div class="code">
+      <pre>
+        &lt;img src="misc/img-map.jpg" <span>usemap="#map"</span> width="250"&gt;
+
+        <span>&lt;map name="map&gt;
+            &lt;area shape="rect" coords="40,30,110,150" alt="mobile" href="url" &gt;
+        &lt;/map&gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <img src="misc/img-map.jpg" usemap="#map" >
+        <map name="map">
+            <area shape="rect" coords="40,30,110,150" alt="mobile" href="https://www.apple.com/in/iphone/" >
+            <area shape="circle" coords="180,94,35" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+        </map>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+    
+
+    <div class="container p-3 bg-head">
+        <h3>Image Figure</h3>
+        <p class="lead">
+            The html <strong>&lt;figure&gt;</strong> represents self-contained content, potentially with an optional caption, which is specified using the <b>&lt;figcaption&gt;</b> element. The figure, its caption, and its contents are referenced as a single unit.
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;figure"&gt;</span>
+            &lt;img src="misc/img1.jpg" alt="Elephant at sunset" width="250"&gt;
+            <span>&lt;figcaption&gt;Fig 1. Light House&lt;/figcaption&gt;
+        &lt;/figure &gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <figure>
+            <img src="misc/img1.jpg" alt="Elephant at sunset" width="250" >
+            <figcaption>Fig 1. Light House</figcaption>
+        </figure>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+    
+
+</body>
+</html>
