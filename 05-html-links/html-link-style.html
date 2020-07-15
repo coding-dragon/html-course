@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Links 1</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    #myBtn {
+        background-color: #3124ee;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 4px solid #9e98f1;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron" id="top">
+        <h2 class="display-3">&lt;a&gt; element styling</h2>
+        <p class="lead">
+            We use anchor element most of types in document to jump from one document to another.
+            Its good practice to represent link in attentive style
+        </p>
+    </div>
+
+
+    <div class="container p-3 bg-head">
+        <h3>styling link as button </h3>
+        <p class="lead">
+           To remove underline from link, <code>text-decoration: none</code> is used in css styling.
+        </p>
+        <div class="code">
+      <pre>
+        <span>#myBtn {
+            background-color: #3124ee;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 4px solid #9e98f1;
+            border-radius: 5px;
+        }</span>
+
+        &lt;a href="https://www.google.com" id="myBtn" &gt;Click Here&lt;/a&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <a href="https://www.google.com" target="_blank" id="myBtn" >
+            Click Here
+        </a>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>link as anchor tag</h3>
+        <p class="lead">
+           To go specific location in same document, <code>id</code> attribute of that element is used in <code>href</code> with #.
+        </p>
+        <div class="code">
+      <pre>
+        &lt;a <span>href="#top"</span> &gt;Go to Top&lt;/a&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <a href="#top" >Go to Top</a>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>

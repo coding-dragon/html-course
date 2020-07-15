@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Links 1</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-3">HTML &lt;a&gt; element</h2>
+        <p class="lead">
+            HTML links are hyperlinks.<br/>
+            Links are found in nearly all web pages. Links allow users to click their way from page to page.
+        </p>
+    </div>
+
+    <div class="container p-3 bg-head">
+        <h3>&lt;a&gt; element</h3>
+        <p class="lead">
+            The HTML <b>&lt;a&gt;</b> element with its <code>href</code> attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;a href="https://www.google.com" &gt;</span>
+            Go to google homepage
+        <span>&lt;/a&gt;</span></pre>
+        </div>
+        <p class="lead">The most important attribute of the <b>&lt;a&gt;</b> element is the <code>href</code> attribute, which indicates the link's destination</p>
+    </div>
+    <br/>
+    <div class="container">
+        <a href="https://www.google.com" >
+            Go to google homepage
+        </a>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>HTML link target attributes</h3>
+        <p class="lead">
+            By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.<br/>
+            The <code>target</code> attribute specifies where to open the linked document. Values are: 
+            <li><code>_self</code> which is default, opens in same window/tab as it was clicked</li>
+            <li><code>_blank</code> opens in new window/tab</li>
+            <li><code>_parent</code> opens in the parent frame</li>
+            <li><code>_top</code> opens in the topmost browsing</li>
+        </p>
+        <div class="code">
+      <pre>
+        <span>&lt;a href="https://www.google.com" target="_self" &gt;</span>
+            self target link
+        <span>&lt;/a&gt;</span>
+        <span>&lt;a href="https://www.google.com" target="_blank" &gt;</span>
+            blank target link
+        <span>&lt;/a&gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <a href="https://www.google.com" target="_self" >
+            self target link
+        </a><br/>
+        <a href="https://www.google.com" target="_blank" >
+            blank target link
+        </a>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Image as link</h3>
+        <p class="lead">
+            To use an image as a link, just put the &lt;img&gt; tag inside the &lt;a&gt; tag:
+        </p>
+        <div class="code">
+      <pre>
+        &lt;a href="https://www.google.com" &gt;
+            <span>&lt;img src="link_img.gif" alt="link_img" width="150" &gt;</span>
+        &lt;/a&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <a href="https://www.google.com" >
+            <img src="link_img.gif" alt="link_img" width="150">
+        </a>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>
