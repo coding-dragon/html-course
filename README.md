@@ -15,3 +15,5 @@
 | | | [HTML Image Background, Picture](https://coding-dragon.github.io/html-course/04-html-images-multimedia/html-img-picture.html) |
 | 05 | [HTML Links](https://github.com/coding-dragon/html-course/tree/master/05-html-links) | [HTML link](https://coding-dragon.github.io/html-course/05-html-links/html-links.html)|
 | | | [HTML link styling & anchor](https://coding-dragon.github.io/html-course/05-html-links/html-link-style.html)|
+| 06 | [HTML Lists](https://github.com/coding-dragon/html-course/tree/master/06-html-lists) | [HTML unordered list](https://coding-dragon.github.io/html-course/06-html-lists/html-unordered-list.html)|
+| | | [HTML ordered & descriptive list](https://coding-dragon.github.io/html-course/06-html-lists/html-ordered-descriptive-list.html)|
