@@ -17,3 +17,6 @@
 | | | [HTML link styling & anchor](https://coding-dragon.github.io/html-course/05-html-links/html-link-style.html)|
 | 06 | [HTML Lists](https://github.com/coding-dragon/html-course/tree/master/06-html-lists) | [HTML unordered list](https://coding-dragon.github.io/html-course/06-html-lists/html-unordered-list.html)|
 | | | [HTML ordered & descriptive list](https://coding-dragon.github.io/html-course/06-html-lists/html-ordered-descriptive-list.html)|
+| 07 | [HTML Tables](https://github.com/coding-dragon/html-course/tree/master/07-html-table) | [HTML Table basic](https://coding-dragon.github.io/html-course/07-html-table/html-table.html)|
+| | | [HTML Table Grouping](https://coding-dragon.github.io/html-course/07-html-table/html-table-group.html)|
+| | | [HTML Table Styling](https://coding-dragon.github.io/html-course/07-html-table/html-table-styling.html)|
