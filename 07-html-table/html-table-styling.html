@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Table styling</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        table, th, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+        th, td {
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        .demo table {
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 169, 206);
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .demo2 th, .demo2 td {
+            border: 1px solid #a5deea;
+            padding: 8px 10px;
+        }
+
+        thead, tfoot {
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        .demo2 tbody {
+            background-color: #f1f9fb;
+        }
+
+        th[scope = 'row'] {
+            background-color: #cbf0f9;
+        }
+
+        caption {
+            color: #333;
+            padding-bottom: 10px;
+        }
+
+        .week {
+            background-color: #d7d9f2;
+        }
+
+        .weekend {
+            background-color: #ffe8d4;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron" id="top">
+        <h2 class="display-3">HTMl Tables</h2>
+        <p class="lead">
+            HTML tables allow web developers to arrange data into rows and columns.
+        </p>
+    </div>
+
+
+    <div class="container p-3 bg-head">
+        <h3>HTML Table Caption</h3>
+        <p class="lead">
+           The HTML <b>&lt;caption&gt;</b> element specifies the caption (or title) of a table.<br/>
+           With <code>caption-side</code> CSS property we can aligned caption with respect to the table.
+        </p>
+        <div class="code">
+      <pre>
+         &lt;table&gt;
+            <span>&lt;caption&gt;Table data&lt;/caption&gt;</span>
+            &lt;tr&gt;
+                &lt;td&gt;Chris&lt;/td&gt;
+                &lt;td&gt;38&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Denis&lt;/td&gt;
+                &lt;td&gt;45&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/table&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <table class="demo1">
+            <caption>Table data</caption>
+            <tr>
+                <th>Person</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Denis</td>
+                <td>45</td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>HTML Table Grouping Styling</h3>
+        <br/>
+        <div class="code">
+      <pre>
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 169, 206);
+            font-size: 15px;
+        }
+        th, td {
+            border: 1px solid #a5deea;
+            padding: 8px 10px;
+        }
+        <span>
+        thead, tfoot {
+            background-color: #00bcd4;
+            color: #fff;
+        }
+        tbody {
+            background-color: #f1f9fb; 
+        }
+        th[scope='row'] {
+            background-color: #cbf0f9;
+        }
+        </span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <table class="demo2">
+            <caption>Currencies table</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">% of daily trades (April 2019)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>United States Dollar</td>
+                    <td>USD (US$)</td>
+                    <td>88.3%</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Euro</td>
+                    <td>EUR (€)</td>
+                    <td>32.3%</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Japanese yen</td>
+                    <td>JPY (¥)</td>
+                    <td>16.8%</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Pound sterling</td>
+                    <td>GBP (£)</td>
+                    <td>12.8%</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Australian dollar</td>
+                    <td>AUD (A$)</td>
+                    <td>6.8%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total</th>
+                    <td>200%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>HTML Styling by &lt;colgroup&gt; and &lt;col&gt;</h3>
+        <p class="lead">
+           The HTML <b>&lt;colgroup&gt;</b> element defines a group of columns within a table.<br/>  
+           The HTML <b>&lt;col&gt;</b> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a &lt;colgroup&gt; element. 
+        </p>
+        <div class="code">
+      <pre>
+      <span>.week {
+        background-color: #d7d9f2;
+       }
+
+       .weekend {
+        background-color: #ffe8d4;
+       }</span>
+    
+       &lt;table&gt;
+            <span>&lt;colgroup&gt;
+                &lt;col&gt;
+                &lt;col span="5" class="week" &gt;
+                &lt;col span="2" class="weekend" &gt;
+            &lt;/colgroup&gt;</span>
+            &lt;tr&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;MONDAY&lt;/th&gt;
+                &lt;th&gt;TUESDAY&lt;/th&gt;
+                &lt;th&gt;WEDNESDAY&lt;/th&gt;
+                &lt;th&gt;THURSDAY&lt;/th&gt;
+                &lt;th&gt;FRIDAY&lt;/th&gt;
+                &lt;th&gt;SATURDAY&lt;/th&gt;
+                &lt;th&gt;SUNDAY&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Activity&lt;/td&gt;
+                &lt;td&gt;College&lt;/td&gt;
+                &lt;td&gt;College&lt;/td&gt;
+                &lt;td&gt;College&lt;/td&gt;
+                &lt;td&gt;College&lt;/td&gt;
+                &lt;td&gt;College&lt;/td&gt;
+                &lt;td&gt;Swimming Classes&lt;/td&gt;
+                &lt;td&gt;Shopping&lt;/td&gt;
+            &lt;/tr&gt;
+       &lt;/table&gt;
+     </pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col>
+                <col span="5" class="week">
+                <col span="2" class="weekend">
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATURDAY</th>
+                <th>SUNDAY</th>
+            </tr>
+            <tr>
+                <th>Activity</th>
+                <td>College</td>
+                <td>College</td>
+                <td>College</td>
+                <td>College</td>
+                <td>College</td>
+                <td>Swimming Classes</td>
+                <td>Shopping</td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>

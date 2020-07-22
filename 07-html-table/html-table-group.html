@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Table Grouping 3</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        th, td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 5px 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        thead, tfoot {
+            background-color: #3f87a6;
+            color: #fff;
+        }
+
+        tbody {
+            background-color: #e4f0f5;;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron" id="top">
+        <h2 class="display-3">HTMl Tables</h2>
+        <p class="lead">
+            HTML tables allow web developers to arrange data into rows and columns.
+        </p>
+    </div>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Table content Grouping</h3>
+        <p class="lead">
+           As we go further in HTML tables, table content can be grouped together according to their specific area.
+           The HTML <b>&lt;thead&gt;</b> defines a set of rows defining the head of the columns of the table.<br/>
+           The HTML <b>&lt;tbody&gt;</b> encapsulates a set of table rows (<tr> elements), indicating that they comprise the body of the table.<br/>
+           The HTML <b>&lt;tfoot&gt;</b> element defines a set of rows summarizing the columns of the table.<br/>
+        </p>
+        <div class="code">
+      <pre>
+         <span>&lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;</span>Items<span>&lt;/th&gt;
+                    &lt;th&gt;</span>Expenditure<span>&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;</span>Donuts<span>&lt;/th&gt;
+                    &lt;td&gt;</span>3,000<span>&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;</span>Totals<span>&lt;/th&gt;
+                    &lt;td&gt;</span>21,000<span>&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th>Stationery</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Totals</th>
+                    <td>21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+ 
+    <div class="container p-3 bg-head">
+        <h3>Grouping - &lt;colgroup&gt; and &lt;col&gt;</h3>
+        <p class="lead">
+           The HTML <b>&lt;colgroup&gt;</b> defines a group of columns within a table.<br/>
+           The HTML <b>&lt;col&gt;</b> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a &lt;colgroup&gt; element<br/>
+        </p>
+        <div class="code">
+      <pre>
+         <span>&lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;</span>Items<span>&lt;/th&gt;
+                    &lt;th&gt;</span>Expenditure<span>&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;</span>Donuts<span>&lt;/th&gt;
+                    &lt;td&gt;</span>3,000<span>&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;</span>Totals<span>&lt;/th&gt;
+                    &lt;td&gt;</span>21,000<span>&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th>Stationery</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Totals</th>
+                    <td>21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>

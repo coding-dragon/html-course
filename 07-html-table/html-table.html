@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Table 1</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    .demo table, .demo th, .demo td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron" id="top">
+        <h2 class="display-3">HTMl Tables</h2>
+        <p class="lead">
+            HTML tables allow web developers to arrange data into rows and columns.
+        </p>
+    </div>
+
+
+    <div class="container p-3 bg-head">
+        <h3>HTML Basic Table</h3>
+        <p class="lead">
+           The HTML <b>&lt;table&gt;</b> element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.<br/>
+           The <b>&lt;tr&gt;</b> element defines a row of cells in a table. <br/>
+           The <b>&lt;th&gt;</b> element defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes.<br/>
+           The <b>&lt;td&gt;</b> element defines a cell of a table that contains data.<br/>
+        </p>
+        <div class="code">
+      <pre>
+         <span>&lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;</span>Person<span>&lt;/th&gt;
+                &lt;th&gt;</span>Age<span>&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;</span>Chris<span>&lt;/td&gt;
+                &lt;td&gt;</span>38<span>&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;</span>Denis<span>&lt;/td&gt;
+                &lt;td&gt;</span>45<span>&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Person</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Denis</td>
+                <td>45</td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Table CSS styling</h3>
+        <p class="lead">
+           styling of css properties for table.
+        </p>
+        <div class="code">
+      <pre>
+        <span>table {
+            border: 1px solid #333;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }</span></pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container demo">
+        <table>
+            <tr>
+                <th>Person</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Denis</td>
+                <td>45</td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Table attributes - rowspan & colspan</h3>
+        <p class="lead">
+           The <b>rowspan</b> attribute contains a integer value that indicates for how many rows the cell extends. Its default value is 1. For vertical spanning use <b>rowsapn</b><br/>
+           Whereas, the <b>colspan</b> attribute contains a integer value that indicates for how many colspan the cell extends. Its default value is 1. For horizontal spanning use <b>colspan</b><br/>
+        </p>
+        <div class="code">
+      <pre>
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Category&lt;/th&gt;
+                &lt;th&gt;Items&lt;/th&gt;
+                &lt;th&gt;Price&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                <span>&lt;td rowspan="2"&gt;Fruits&lt;/td&gt;</span>
+                &lt;td&gt;Apples&lt;/td&gt;
+                &lt;td&gt;$ 5&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Oranges&lt;/td&gt;
+                &lt;td&gt;$ 7&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                <span> &lt;td colspan="2&gt;Total&lt;/td&gt;</span>
+                &lt;td&gt;$ 12&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container demo">
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Items</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Fruits</td>
+                <td>Apples</td>
+                <td>$ 5</td>
+            </tr>
+            <tr>
+                <td>Oranges</td>
+                <td>$ 7</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>$ 12</td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+</body>
+</html>
