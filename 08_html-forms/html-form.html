@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Forms Basic 1</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/coding-dragon/coding-dragon.github.io/master/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    input, button {
+        padding: 5px;
+        font-size: 17px;
+    }
+    button {
+        background-color: #ffcc34;
+        border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron" id="top">
+        <h2 class="display-3">HTMl Forms Basic Controls</h2>
+        <p class="lead">
+            Web forms are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a user interface.<br/>
+            This module will help you master the essentials of web forms.
+        </p>
+    </div>
+
+
+    <div class="container p-3 bg-head">
+        <h3>HTML &lt;form&gt; element</h3>
+        <p class="lead">
+           The HTML <b>&lt;form&gt;</b> element formally defines a form and attributes that determine the form's behavior. Each time you want to create an HTML form, you must start it by using this element, nesting all the contents inside.<br/>
+           <code>autocomplete</code> - attribute indicates whether input elements can by default have their values automatically completed by the browser. Values are <b>on</b> or <b>off</b><br/><br/>
+           <br/>
+
+           <b>Attributes for form submission</b><br/>
+           <code>action</code> - the URL that processes the form submission.<br/>
+           <code>method</code> - the HTTP method to submit the form with. The possible values are <b>POST</b> form data sent as the request body and <b>GET</b> form data appended to the action URL with a ? separator. 
+        </p>
+        <div class="code">
+      <pre>
+          <span>&lt;form action="" menthod="GET" &gt;</span>
+                form input elements
+          <span>&lt;/form&gt;</span></pre>
+        </div>
+    </div>
+    <br/>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>HTML &lt;label&gt; element</h3>
+        <p class="lead">
+           The HTML <b>&lt;label&gt;</b> element represents a caption for an item in a user interface.<br/>
+           The label text is not only visually associated with its corresponding text input; it is programmatically associated with it too. With <code>for</code> attributes we can given gorm element id value to define it.<br/>
+           <br/>
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+                <span>&lt;label for="" &gt;</span>Input 1 label name<span>&lt;/label&gt;</span>
+                    form input 1 element
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Text input fields</h3>
+        <p class="lead">
+            Text &lt;input&gt; fields are the most basic form widgets. 
+        </p>
+        <h4>Single line text fields</h4>
+        <p class="lead">
+            A single line text field is created using an <b>&lt;input&gt;</b> element whose <code>type</code> attribute value is set to <b>text</b>. Attribute <code>placeholder</code> retain the information text for that field and <code>value</code> is current value of the form control. 
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+               &lt;label for="name"&gt;Name: &lt;/label&gt;
+               <span>&lt;input type="text" id="name" placeholder="input text field" &gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="input text field" value="" >
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h4>Password field</h4>
+        <p class="lead">
+            A Password field is created using an <b>&lt;input&gt;</b> element whose <code>type</code> attribute value is set to <b>password</b>. The Password field obscure the value entered into the field so it can't be easily read by others.
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+               &lt;label for="password"&gt;Password: &lt;/label&gt;
+               <span>&lt;input type="password" id="password" value="mypassword" &gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form>
+            <label for="password">Password: </label>
+            <input type="password" id="password" value="mypassword" >
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h4>Hidden field</h4>
+        <p class="lead">
+            A Hidden field is created using an <b>&lt;input&gt;</b> element whose <code>type</code> attribute value is set to <b>hidden</b>. This is used to create a form control that is invisible to the user, but is still sent to the server along with the rest of the form data once submitted 
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+               <span>&lt;input type="hidden" name="timestamp" value="1286705410"&gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form>
+            <input type="hidden" name="timestamp" value="1286705410" >
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+    <div class="container p-3 bg-head">
+        <h3>Checkable items: checkboxes and radio buttons</h3>
+        <p class="lead">
+            Checkable items are controls whose state you can change by clicking on them or their associated labels. There are two kinds of checkable item: the check box and the radio button.
+        </p>
+        <h4>Checkbox</h4>
+        <p class="lead">
+            Checkboxes let a user select ZERO or MORE options of a limited number of choices.<br/>
+            Checkboxe is created using an <b>&lt;input&gt;</b> element whose <code>type</code> attribute value is set to <b>checkbox</b>. Including the <code>checked</code> attribute makes the checkbox checked automatically when the page loads. Clicking the checkbox or its associated label toggles the checkbox on and off.
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+                &lt;label for="red"&gt;Red: &lt;/label&gt;
+                <span>&lt;input type="checkbox" id="red" name="redcolor" checked&gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form>
+            <p>Choose your colors</p>
+            <label for="red">Red: </label>
+            <input type="checkbox" id="red" name="redcolor" checked>
+            <label for="blue">Blue: </label>
+            <input type="checkbox" id="blue" name="bluecolor" >
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h4>Radio buttons</h4>
+        <p class="lead">
+            Radio buttons let a user select ONLY ONE of a limited number of choices.<br/>
+            Radio button field is created using an <b>&lt;input&gt;</b> element whose <code>type</code> attribute value is set to <b>radio</b>. Including the <code>checked</code> attribute makes the radio button checked automatically when the page loads. Clicking the radio button or its associated label toggles the radio button on and off.
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+                &lt;label for="red"&gt;Red: &lt;/label&gt;
+                <span>&lt;input type="checkbox" id="red" name="redcolor" checked&gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form>
+            <p>What is your favorite meal?</p>
+            <label for="soup">Soup</label>
+            <input type="radio" id="soup" name="meal" value="soup">
+            <label for="pizza">Pizza</label>
+            <input type="radio" id="pizza" name="meal" value="pizza" checked>
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+    <div class="container p-3 bg-head">
+        <h3>Form buttons</h3>
+        <p class="lead">
+            The radio button isn't actually a button, despite its name.
+        </p>
+        <h4>Submit Button</h4>
+        <p class="lead">
+            Sends the form data to the server.<br/>
+            For button <b>&lt;button&gt;</b> element whose <code>type</code> attribute value is set to <b>submit</b>.
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+                <span>&lt;button type="submit" &gt;</span>Submit <span>&lt;/button&gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form autocomplete="off">
+            <input type="text" name="name" placeholder="Name">
+            <button type="submit" >Submit </button>
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+   
+    <div class="container p-3 bg-head">
+        <h4>Reset Button</h4>
+        <p class="lead">
+            Sends the form data to the server.<br/>
+            For button <b>&lt;button&gt;</b> element whose <code>type</code> attribute value is set to <b>submit</b>.
+        </p>
+        <div class="code">
+      <pre>
+          &lt;form&gt;
+                <span>&lt;button type="reset" &gt;</span>Submit <span>&lt;/button&gt;</span>
+          &lt;/form&gt;</pre>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <form autocomplete="off">
+            <input type="text" name="name" placeholder="Name">
+            <button type="reset" >Reset </button>
+       </form>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+
+
+</body>
+</html>
