@@ -21,3 +21,5 @@
 | 07 | [HTML Tables](https://github.com/coding-dragon/html-course/tree/master/07-html-table) | [HTML Table basic](https://coding-dragon.github.io/html-course/07-html-table/html-table.html)|
 | | | [HTML Table Grouping](https://coding-dragon.github.io/html-course/07-html-table/html-table-group.html)|
 | | | [HTML Table Styling](https://coding-dragon.github.io/html-course/07-html-table/html-table-styling.html)|
+| 08 | [HTML Forms](https://github.com/coding-dragon/html-course/tree/master/08_html-forms) | [HTML Form basic control ](https://coding-dragon.github.io/html-course/08-html-forms/html-form.html)|
+| | | [HTML Other form controls](https://coding-dragon.github.io/html-course/08_html-forms/html-form_2.html)|
